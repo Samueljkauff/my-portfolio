@@ -1,47 +1,37 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <ScrollingText
+    v-for="text in scrollText"
+    :children="text"
+    :animation-duration="animationDuration"
+    :ease="ease"
+    :scroll-start="scrollStart"
+    :scroll-end="scrollEnd"
+    :stagger="stagger"
+    :container-class-name="containerClassName"
+    :text-class-name="textClassName"
+    :scroll-container-ref="{ current: containerRef }"
+    :key="rerenderKey"
+  />
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<script lang="ts">
+import ScrollingText from './components/ScrollingText.vue'
+
+export default {
+  components: { ScrollingText },
+  data() {
+    return {
+      scrollText: ['HELLO'],
+      animationDuration: 5,
+      ease: 'linear',
+      scrollStart: '',
+      scrollEnd: '',
+      stagger: 0,
+      containerClassName: '',
+      textClassName: '',
+      containerRef: null,
+      rerenderKey: 0,
+    }
+  },
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+</script>
