@@ -37,7 +37,7 @@ export default {
           image: vividus,
           title: 'Vividus Labs',
           position: 'QA Tester',
-          description: 'Worked in a small team to test the functionality and quality of the website.',
+          description: 'Worked in a small team testing SaaS web applications to find and report bugs before they shipped. Managed and tracked tickets through Monday.com to keep everything organized across the team.',
         },
       ],
     }
