@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import type { Projects } from '@/interfaces/projects';
+import type { Projects } from '@/interfaces/Projects.ts';
 
 export default {
   props: {
