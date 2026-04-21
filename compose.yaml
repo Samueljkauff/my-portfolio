@@ -10,7 +10,7 @@ services:
       - "traefik.http.routers.vue-app.rule=Host(`woopi.undo.it`)"
       - "traefik.http.routers.vue-app.entrypoints=websecure"
       - "traefik.http.routers.vue-app.tls=true"
-      - "traefik.http.routers.vue-app.tls.certresolver=myresolver"
+      - "traefik.http.routers.vue-app.tls.certresolver=letsencrypt"
       # Specify the port since Nginx inside the container uses 80
       - "traefik.http.services.vue-app.loadbalancer.server.port=80"
     restart: unless-stopped
