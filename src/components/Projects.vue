@@ -15,9 +15,9 @@
 
 <script lang="ts">
 import ProjectCard from './ProjectCard.vue';
-import type { Projects } from '@/interfaces/projects';
 import structrsImg from '@/images/Structrs.png';
 import dailyAlbumImg from '@/images/Daily-Album.png';
+import type { Projects } from '@/interfaces/projects'
 
 
 export default {
