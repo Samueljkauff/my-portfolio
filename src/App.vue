@@ -5,7 +5,7 @@
       <HeroSection id="about" />
       <Projects id="projects" />
       <ExperienceSection id="experience" />
-      <CommentSection id="comments" />
+      <!-- <CommentSection id="comments" /> -->
     </main>
   </div>
 </template>

@@ -26,7 +26,9 @@
           <i class="pi pi-instagram social-icon"></i>
         </a>
       </div>
-      <button class="text-secondary border w-1/4 rounded-md hover:bg-[#ffd60a] hover:text-[#000814] h-xl">Contact Me</button>
+      <a href="mailto:samueljkauff@gmail.com">
+        <button class="text-secondary border w-1/4 rounded-md hover:bg-[#ffd60a] hover:text-[#000814] h-xl">Contact Me</button>
+      </a>
     </div>
     <div class="rounded-full overflow-hidden w-120 h-120 ring-4 ring-[#ffd60a] shadow-2xl">
       <img class="w-full h-full object-cover" src="../images/headshot.JPG" />
