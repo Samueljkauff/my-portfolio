@@ -11,7 +11,7 @@
             <h2 class="text-[#ffd60a] font-semibold text-lg">{{ job.title }}</h2>
             <p class="text-[#cad2c5] text-sm opacity-60">{{ job.position }}</p>
           </div>
-          <p class="text-[#cad2c5] text-sm opacity-80 leading-relaxed">{{ job.description }}</p>
+          <p class="text-[#cad2c5] text-md opacity-80 leading-relaxed">{{ job.description }}</p>
         </div>
       </div>
 
@@ -37,7 +37,7 @@ export default {
           image: vividus,
           title: 'Vividus Labs',
           position: 'QA Tester',
-          description: 'Developed REST APIs with Node.js and integrated them with a React frontend. Worked in an agile team of 6 engineers.',
+          description: 'Worked in a small team to test the functionality and quality of the website.',
         },
       ],
     }
