@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import CommentSection from './components/CommentSection.vue';
-import ExperienceSection from './components/Experience Section.vue';
+import ExperienceSection from './components/ExperienceSection.vue';
 import HeroSection from './components/HeroSection.vue';
 import NavigationBar from './components/NavigationBar.vue';
 import Projects from './components/Projects.vue';
