@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen flex justify-center items-center">
     <div class="flex flex-col gap-5 h-3/4 w-3/4 bg-[#001d3d] rounded-lg p-10">
-      <h1 class="text-6xl font-bold text-[#ffd60a] text-center">My Experience</h1>
+      <h1 class="text-6xl font-bold! text-[#ffd60a] text-center">My Experience</h1>
       <hr class="border-[#ffd60a33]">
 
       <div class="flex gap-6">
