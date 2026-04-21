@@ -3,19 +3,19 @@
         <div @click="onExpandClick" class="nav-item">
             <i :class="isOpen ? 'pi pi-arrow-left icon' : 'pi pi-bars icon'"></i>
         </div>
-        <div class="nav-item">
+        <div @click="scrollTo('about')" class="nav-item">
             <i class="pi pi-user icon"></i>
             <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">About</p>
         </div>
-        <div class="nav-item">
+        <div @click="scrollTo('projects')" class="nav-item">
             <i class="pi pi-code icon"></i>
             <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Projects</p>
         </div>
-        <div class="nav-item">
+        <div @click="scrollTo('experience')" class="nav-item">
             <i class="pi pi-briefcase icon"></i>
             <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Experience</p>
         </div>
-        <div class="nav-item">
+        <div @click="scrollTo('comments')" class="nav-item">
             <i class="pi pi-comment icon"></i>
             <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Comment</p>
         </div>
@@ -34,6 +34,9 @@ export default {
     methods: {
         onExpandClick() {
             this.isOpen = !this.isOpen;
+        },
+        scrollTo(id: string) {
+            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
         },
     }
 }
