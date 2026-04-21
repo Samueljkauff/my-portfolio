@@ -17,7 +17,8 @@
 import ProjectCard from './ProjectCard.vue';
 import structrsImg from '@/images/Structrs.png';
 import dailyAlbumImg from '@/images/Daily-Album.png';
-import type { Projects } from '@/interfaces/projects'
+import journalImg from '@/images/Journal.png';
+import type { Projects } from '@/interfaces/projects';
 
 
 export default {
@@ -35,7 +36,7 @@ export default {
       },
       {
         title: 'Journal To Do List',
-        image: '../images/Journal.png',
+        image: journalImg,
         description: 'Manage your past present and future using Journal To Do List.'
       }] as Projects[]
     }
