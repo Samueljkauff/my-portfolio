@@ -1,20 +1,21 @@
 <template>
   <div class="flex items-center justify-around h-screen px-20">
-    <div class="flex flex-col">
-      <p class="text-[#ffc300] text-lg tracking-widest uppercase">Hello,</p>
-      <h1 class="text-6xl font-bold text-[#cad2c5]">
+    <div class="flex flex-col h-auto">
+      <p class="text-[#ffc300] text-xl tracking-widest uppercase">Hello,</p>
+      <h1 class="text-7xl font-bold text-[#cad2c5]">
         I'm <span class="text-[#ffd60a]">Sam Kauffman</span>
       </h1>
-      <p class="text-lg text-[#ffc300]/80">
+      <p class="text-xl text-[#ffc300]/80">
         I am a full stack web developer located in Louisville Kenucky. <br> I graduated from
         <a
           href="https://www.bellarmine.edu/"
           class="text-[#ffd60a] hover:text-[#cad2c5] transition-colors duration-200"
           >Bellarmine University</a
         >
-        in 2026 with a bachalor <br> of arts in computer science.
+        in May 2026 with a <br>bachalor of arts in computer science. I focus on building <br>stylish and
+        responsive websites with user experience in mind.
       </p>
-      <div class="flex gap-6 pt-4">
+      <div class="flex gap-6 py-4 h-auto">
         <a href="https://www.linkedin.com/in/sam-kauffman-0354b6271/" target="_blank">
           <i class="pi pi-linkedin social-icon"></i>
         </a>
@@ -25,8 +26,9 @@
           <i class="pi pi-instagram social-icon"></i>
         </a>
       </div>
+      <button class="text-[#ffd60a] border w-1/4 rounded-md hover:bg-[#ffd60a] hover:text-[#000814] h-xl">Contact Me</button>
     </div>
-    <div class="rounded-full overflow-hidden w-80 h-80 ring-4 ring-[#ffd60a] shadow-2xl">
+    <div class="rounded-full overflow-hidden w-90 h-90 ring-4 ring-[#ffd60a] shadow-2xl">
       <img class="w-full h-full object-cover" src="../images/headshot.JPG" />
     </div>
   </div>
