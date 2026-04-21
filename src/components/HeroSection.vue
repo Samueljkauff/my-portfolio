@@ -6,7 +6,7 @@
         I'm <span class="text-secondary font-bold!">Sam Kauffman</span>
       </h1>
       <p class="text-xl text-secondary/80">
-        I am a full stack web developer located in Louisville Kenucky. <br> I graduated from
+        I am a full stack web developer located in Louisville Kentucky. <br> I graduated from
         <a
           href="https://www.bellarmine.edu/"
           class="text-secondary hover:text-[#cad2c5] transition-colors duration-200"
