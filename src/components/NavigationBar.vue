@@ -1,19 +1,23 @@
 <template>
-    <div :class="['flex flex-col justify-start h-screen bg-[#1b4332]', isOpen ? 'w-45 items-start' : 'w-15 items-start']">
-        <div>
-            <i @click="onExpandClick" :class="isOpen ? 'pi pi-arrow-left icon justify-end' : 'pi pi-bars icon'"></i>
+    <div :class="['sidebar flex flex-col justify-start h-screen bg-[#001d3d] items-center', isOpen ? 'w-45 items-start' : 'w-14']">
+        <div @click="onExpandClick" class="nav-item">
+            <i :class="isOpen ? 'pi pi-arrow-left icon' : 'pi pi-bars icon'"></i>
         </div>
-        <div>
-            <i class="pi pi-code icon"> <p v-if="isOpen" class="inline text"> Projects</p></i>
+        <div class="nav-item">
+            <i class="pi pi-user icon"></i>
+            <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">About</p>
         </div>
-        <div>
-            <i class="pi pi-user icon"><p v-if="isOpen" class="inline text"> About</p></i>
+        <div class="nav-item">
+            <i class="pi pi-code icon"></i>
+            <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Projects</p>
         </div>
-        <div>
-            <i class="pi pi-comment icon"><p v-if="isOpen" class="inline text"> Comment</p></i>
+        <div class="nav-item">
+            <i class="pi pi-comment icon"></i>
+            <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Comment</p>
         </div>
-        <div>
-            <i class="pi pi-envelope icon"><p v-if="isOpen" class="inline text"> Message</p></i>
+        <div class="nav-item">
+            <i class="pi pi-envelope icon"></i>
+            <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Message</p>
         </div>
     </div>
 </template>
@@ -33,19 +37,58 @@ export default {
         },
     }
 }
-
 </script>
 
 <style>
-    .icon {
-        font-size: 25px;
-        margin-top: 15px;
-        color: #d8f3dc;
-        margin-left: 15px;
-        margin-right: 4px;
+    .sidebar {
+        transition: width 0.3s ease;
+        overflow: hidden;
     }
 
-    .text {
-        margin-right: 2px;
+    .icon {
+        font-size: 25px;
+        color: #cad2c5;
+        flex-shrink: 0;
+        width: 25px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 14px;
+        gap: 12px;
+        width: 100%;
+        transition: background 0.2s ease;
+        border-radius: 6px;
+    }
+
+    .nav-item:hover {
+        background: linear-gradient(to right, #52796f55, transparent);
+        cursor: pointer;
+    }
+
+    .label {
+        color: #cad2c5;
+        white-space: nowrap;
+    }
+
+    .label-enter {
+        animation: fadeIn 0.2s ease 0.15s both;
+    }
+
+    .label-exit {
+        animation: fadeOut 0.15s ease both;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateX(-6px); }
+        to   { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeOut {
+        from { opacity: 1; transform: translateX(0); }
+        to   { opacity: 0; transform: translateX(-6px); }
     }
 </style>
