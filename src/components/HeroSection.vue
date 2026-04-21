@@ -28,7 +28,7 @@
       </div>
       <button class="text-[#ffd60a] border w-1/4 rounded-md hover:bg-[#ffd60a] hover:text-[#000814] h-xl">Contact Me</button>
     </div>
-    <div class="rounded-full overflow-hidden w-90 h-90 ring-4 ring-[#ffd60a] shadow-2xl">
+    <div class="rounded-full overflow-hidden w-120 h-120 ring-4 ring-[#ffd60a] shadow-2xl">
       <img class="w-full h-full object-cover" src="../images/headshot.JPG" />
     </div>
   </div>
