@@ -27,7 +27,7 @@
         </a>
       </div>
       <a href="mailto:samueljkauff@gmail.com">
-        <button class="text-secondary border w-1/4 rounded-md hover:bg-[#ffd60a] hover:text-[#000814] h-xl">Contact Me</button>
+        <button class="text-secondary border w-1/4 rounded-md hover:bg-[#ffd60a] hover:text-[#000814] h-xl cursor-pointer">Contact Me</button>
       </a>
     </div>
     <div class="rounded-full overflow-hidden w-120 h-120 ring-4 ring-[#ffd60a] shadow-2xl">
