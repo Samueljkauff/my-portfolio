@@ -3,8 +3,9 @@
     <NavigationBar />
     <main class="flex-1 overflow-y-auto">
       <HeroSection id="about" />
-      <Projects id="projects" />
+      <Projects id="projects" :section="'code'" />
       <ExperienceSection id="experience" />
+      <Projects id="designs" :section="'design'" />
       <!-- <CommentSection id="comments" /> -->
     </main>
   </div>

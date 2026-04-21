@@ -15,6 +15,10 @@
             <i class="pi pi-briefcase icon"></i>
             <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Experience</p>
         </div>
+        <div @click="scrollTo('designs')" class="nav-item">
+            <i class="pi pi-palette icon"></i>
+            <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Designs</p>
+        </div>
         <!-- <div @click="scrollTo('comments')" class="nav-item">
             <i class="pi pi-comment icon"></i>
             <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Comment</p>
