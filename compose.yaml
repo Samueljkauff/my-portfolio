@@ -7,10 +7,12 @@ services:
     labels:
       - "traefik.enable=true"
       # Match the certresolver name defined in your main Traefik config
-      - "traefik.http.routers.vue-app.rule=Host(`woopi.undo.it`)"
+      #      - "traefik.http.routers.vue-app.rule=Host(`woopi.undo.it`)"
+      - "traefik.http.routers.vue-app.rule=Host(`woopi.farted.net`)"
       - "traefik.http.routers.vue-app.entrypoints=websecure"
       - "traefik.http.routers.vue-app.tls=true"
       - "traefik.http.routers.vue-app.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.vue-app.service=vue-app"
       # Specify the port since Nginx inside the container uses 80
       - "traefik.http.services.vue-app.loadbalancer.server.port=80"
     restart: unless-stopped
