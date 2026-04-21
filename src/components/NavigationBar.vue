@@ -12,12 +12,12 @@
             <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Projects</p>
         </div>
         <div class="nav-item">
-            <i class="pi pi-comment icon"></i>
-            <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Comment</p>
+            <i class="pi pi-briefcase icon"></i>
+            <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Experience</p>
         </div>
         <div class="nav-item">
-            <i class="pi pi-envelope icon"></i>
-            <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Message</p>
+            <i class="pi pi-comment icon"></i>
+            <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Comment</p>
         </div>
     </div>
 </template>

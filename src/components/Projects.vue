@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex flex-col min-h-screen p-1 bg-[#000c1d] items-center">
-    <h1 class="text-6xl text-[#ffd60a] text-center pb-12 pt-12">
+    <h1 class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
       My Projects
     </h1>
     <div class="flex flex-wrap justify-center gap-12 w-full max-w-7xl">
@@ -16,23 +16,26 @@
 <script lang="ts">
 import ProjectCard from './ProjectCard.vue';
 import type { Projects } from '@/interfaces/projects';
+import structrsImg from '@/images/Structrs.png';
+import dailyAlbumImg from '@/images/Daily-Album.png';
+
 
 export default {
   data () {
     return {
       projectList: [{
         title: 'Structrs',
-        image: './images/Structrs.png',
+        image: structrsImg,
         description: 'Organize your files easily with Structrs. Structrs is an agentic file organizer that determines where a newly downloaded file belongs and moves it in real time.'
       },
       {
         title: 'Daily Album',
-        images: './images/Daily-Album.png',
+        image: dailyAlbumImg,
         description: 'A mobile app that provides a daily album recommendation based off your Spotify statistics.'
       },
       {
         title: 'Journal To Do List',
-        images: './images/Journal.png',
+        image: '../images/Journal.png',
         description: 'Manage your past present and future using Journal To Do List.'
       }] as Projects[]
     }
