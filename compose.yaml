@@ -8,7 +8,7 @@ services:
       - "traefik.enable=true"
       # Match the certresolver name defined in your main Traefik config
       #      - "traefik.http.routers.vue-app.rule=Host(`woopi.undo.it`)"
-      - "traefik.http.routers.vue-app.rule=Host(`woopi.farted.net`)"
+      - "traefik.http.routers.vue-app.rule=Host(`sam-kauffman-portfolio.mooo.com`)"
       - "traefik.http.routers.vue-app.entrypoints=websecure"
       - "traefik.http.routers.vue-app.tls=true"
       - "traefik.http.routers.vue-app.tls.certresolver=letsencrypt"
