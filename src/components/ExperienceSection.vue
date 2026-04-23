@@ -31,7 +31,7 @@ export default {
           image: concord,
           title: 'Concord Energy Strategies',
           position: 'Web Dev Intern',
-          description: 'Worked in a small agile team to design and build a SaaS web application. Contributed to both frontend and backend development using Vue, TypeScript, Tailwind, Laravel, Inertia, and Vite. Managed tasks through Jira and collaborated via GitHub with a pull request review process requiring two approvals before merging.',
+          description: 'Worked in a small agile team to design and build a SaaS web application from the ground up. Contributed to both frontend and backend development using Vue, TypeScript, Tailwind, Laravel, Inertia, and Vite. Managed tasks through Jira and collaborated via GitHub with a pull request review process requiring two approvals before merging.',
         },
         {
           image: vividus,

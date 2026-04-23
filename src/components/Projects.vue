@@ -26,6 +26,7 @@ import structrsImg from '@/images/Structrs.png';
 import dailyAlbumImg from '@/images/Daily-Album.png';
 import journalImg from '@/images/Journal.png';
 import jwtFlowImg from '@/images/JwtFlow.png';
+import impsPizzaImg from '@/images/Imps.png';
 import type { Projects } from '@/interfaces/projects';
 
 
@@ -61,10 +62,10 @@ export default {
         type: 'design',
       },
       {
-        title: '',
-        image: 'place',
-        description: '',
-        link: '',
+        title: "impellizzeri's pizza Hero Section",
+        image: impsPizzaImg,
+        description: "Concept hero section for Impellizzeri's Pizza in Louisville Kentucky. This is an unofficial design created for design practice only.",
+        link: 'https://impellizzeris.com/',
         type: 'design',
       }] as Projects[]
     }
