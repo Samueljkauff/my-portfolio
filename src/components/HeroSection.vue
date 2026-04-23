@@ -5,16 +5,16 @@
       <h1 class="text-7xl font-bold text-[#cad2c5]">
         I'm <span class="text-secondary font-bold!">Sam Kauffman</span>
       </h1>
-      <p class="text-xl text-secondary/80">
-        I am a full stack web developer located in Louisville Kentucky. <br> I graduated from
+      <div class="text-xl text-secondary/80 w-lg sm:w-md">
+        I am a full stack web developer located in Louisville Kentucky. I graduated from
         <a
           href="https://www.bellarmine.edu/"
           class="text-secondary hover:text-[#cad2c5] transition-colors duration-200"
           >Bellarmine University</a
         >
-        in May 2026 with a <br>bachelor of arts in computer science. I focus on building <br>stylish and
+        in May 2026 with a bachelor of arts in computer science. I focus on building stylish and
         responsive websites with user experience in mind.
-      </p>
+      </div>
       <div class="flex gap-6 py-4 h-auto">
         <a href="https://www.linkedin.com/in/sam-kauffman-0354b6271/" target="_blank">
           <i class="pi pi-linkedin social-icon"></i>
@@ -30,19 +30,23 @@
         <button class="text-secondary border w-1/4 rounded-md hover:bg-[#ffd60a] hover:text-[#000814] h-xl cursor-pointer">Contact Me</button>
       </a>
     </div>
-    <div class="rounded-full overflow-hidden w-120 h-120 ring-4 ring-[#ffd60a] shadow-2xl">
+    <div v-if="width > 768" class="rounded-full overflow-hidden w-120 h-120 ring-4 ring-[#ffd60a] shadow-2xl">
       <img class="w-full h-full object-cover" src="../images/headshot.JPG" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import 'primeicons/primeicons.css'
+import 'primeicons/primeicons.css';
+import { useWindowSize } from '@vueuse/core';
+
 
 export default {
-  data() {
-    return {}
-  },
+setup() {
+  const { width } = useWindowSize();
+
+  return { width };
+}
 }
 </script>
 
