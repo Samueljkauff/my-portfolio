@@ -1,12 +1,12 @@
 <template>
-  <div class="w-full flex flex-col min-h-screen p-1 bg-[#000c1d] items-center">
+  <div class="w-full flex flex-col p-1 bg-[#000c1d] items-center">
     <h1 v-if="section == 'code'" class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
       My Code Projects
     </h1>
     <h1 v-if="section == 'design'" class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
       My Design Projects
     </h1>
-    <div class="flex flex-wrap justify-center gap-12 w-full max-w-7xl">
+    <div class="flex flex-wrap justify-center gap-12 w-full max-w-7xl pb-12">
     <a
       v-for="project in projectList.filter(p => p.type === section)"
       :key="project.title"
@@ -86,7 +86,7 @@ export default {
 <style>
 .project {
   background-color: #001d3d;
-  width: 500px;
+  width: 600px;
   color: #d8f3dc;
   padding: 20px;
   border-radius: 10px;
