@@ -62,7 +62,7 @@ export default {
         type: 'design',
       },
       {
-        title: "impellizzeri's pizza Hero Section",
+        title: "Impellizzeri's Pizza Hero Section",
         image: impsPizzaImg,
         description: "Concept hero section for Impellizzeri's Pizza in Louisville Kentucky. This is an unofficial design created for design practice only.",
         link: 'https://impellizzeris.com/',
