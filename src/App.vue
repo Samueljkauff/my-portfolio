@@ -1,10 +1,11 @@
 <template>
   <div class="flex h-screen overflow-hidden">
-    <NavigationBar />
+    <NavigationBar class="hidden lg:flex" />
     <main class="flex-1 overflow-y-auto">
       <HeroSection id="about" />
       <Projects id="projects" :section="'code'" />
       <ExperienceSection id="experience" />
+      <Projects id="research" :section="'research'" />
       <Projects id="designs" :section="'design'" />
       <!-- <CommentSection id="comments" /> -->
     </main>

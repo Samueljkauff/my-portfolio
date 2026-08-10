@@ -3,6 +3,9 @@
     <h1 v-if="section == 'code'" class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
       My Code Projects
     </h1>
+    <h1 v-if="section == 'research'" class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
+      My Publish
+    </h1>
     <h1 v-if="section == 'design'" class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
       My Design Projects
     </h1>
@@ -67,13 +70,19 @@ export default {
         description: "Concept hero section for Impellizzeri's Pizza in Louisville Kentucky. This is an unofficial design created for design practice only.",
         link: 'https://impellizzeris.com/',
         type: 'design',
-      }] as Projects[]
+      },
+      {
+          title: "Published Research Paper — IEEE",
+          image: '',
+          description: "Intelligent eyes in the sky are redefining how smart cities see the world. The rapid expansion of smart city initiatives has driven the need for efficient and real-time vehicle monitoring solutions. Traditional surveillance systems, dependent on static cameras and cloud-based computation, face limitations in scalability, energy efficiency, and responsiveness. This study explores the performance of a lightweight deep learning model, YOLOv11n, for drone-based car recognition aimed at enhancing campus and urban safety. The system was designed to identify commonly used vehicle types often associated with theft or unauthorized parking incidents, leveraging a small yet diverse set of aerial and web-sourced images. The YOLOv11n classifier achieved a top-1 accuracy of 95.95% and a top-5 accuracy of 100%, demonstrating strong generalization even under limiteddata conditions. The results highlight YOLOv11's suitability for real-time, edge-based deployment in intelligent surveillance and smart parking applications. Future work will focus on model optimization, broader dataset expansion, and embedded testing on UAV hardware for autonomous security operations.",
+          link: 'https://ieeexplore.ieee.org/abstract/document/11467943',
+          type: 'research',
+        }] as Projects[]
     }
   },
   props: {
     section: {
       type: String,
-      default: "Projects",
       required: true,
     }
   },
@@ -86,7 +95,6 @@ export default {
 <style>
 .project {
   background-color: #001d3d;
-  width: 600px;
   color: #d8f3dc;
   padding: 20px;
   border-radius: 10px;
