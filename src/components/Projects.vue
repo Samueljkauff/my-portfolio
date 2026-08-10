@@ -4,7 +4,7 @@
       My Code Projects
     </h1>
     <h1 v-if="section == 'research'" class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
-      My Publish
+      My Research
     </h1>
     <h1 v-if="section == 'design'" class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
       My Design Projects
