@@ -94,7 +94,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import 'primeicons/primeicons.css';
 </script>
 
