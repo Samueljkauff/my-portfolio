@@ -9,13 +9,14 @@
     <h1 v-if="section == 'design'" class="text-6xl text-[#ffd60a] text-center pb-12 pt-12 font-bold!">
       My Design Projects
     </h1>
-    <div class="flex flex-wrap justify-center gap-12 w-full max-w-7xl pb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-7xl pb-12 px-6">
     <a
       v-for="project in projectList.filter(p => p.type === section)"
       :key="project.title"
       :href="project.link"
       target="_blank"
-      rel="noopener noreferrer">
+      rel="noopener noreferrer"
+      :class="project.type === 'research' ? 'md:col-span-2' : ''">
       <ProjectCard :project="project"
       />
     </a>
@@ -30,6 +31,7 @@ import dailyAlbumImg from '@/images/Daily-Album.png';
 import journalImg from '@/images/Journal.png';
 import jwtFlowImg from '@/images/JwtFlow.png';
 import impsPizzaImg from '@/images/Imps.png';
+import TrackUImg from '@/images/TrackU.png';
 import type { Projects } from '@/interfaces/projects';
 
 
@@ -55,6 +57,13 @@ export default {
         image: journalImg,
         description: 'Manage your past present and future using Journal To Do List.',
         link: 'https://github.com/Samueljkauff/Journal-and-To-Do-List',
+        type: 'code'
+      },
+      {
+        title: 'Track U (In Progress)',
+        image: TrackUImg,
+        description: 'A dashboard to display your raw data from Spotify.',
+        link: 'https://github.com/Samueljkauff/Track-U',
         type: 'code'
       },
       {
