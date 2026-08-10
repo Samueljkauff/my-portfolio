@@ -33,7 +33,7 @@
         >
           Bellarmine University
         </a>
-        in May 2026 with a bachelor of arts in computer science. I focus on building stylish and
+        in May 2026 with a Bachelor of Arts in Computer Science. I focus on building stylish and
         responsive websites with user experience in mind.
       </div>
 
