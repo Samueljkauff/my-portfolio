@@ -23,10 +23,10 @@
             <i class="pi pi-palette icon"></i>
             <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Designs</p>
         </div>
-        <div @click="scrollTo('comments')" class="nav-item">
+        <!-- <div @click="scrollTo('comments')" class="nav-item">
             <i class="pi pi-comment icon"></i>
             <p :class="['label text-lg', isOpen ? 'label-enter' : 'label-exit']">Comment</p>
-        </div>
+        </div> -->
     </div>
 </template>
 
