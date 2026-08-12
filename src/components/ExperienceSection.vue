@@ -2,7 +2,7 @@
   <div class="h-fit flex justify-center items-center py-12">
     <div class="flex flex-col gap-5 h-3/4 w-11/12 md:w-3/4 bg-[#001d3d] rounded-lg p-6 md:p-10">
       
-      <h1 class="text-4xl md:text-6xl font-bold text-[#ffd60a] text-center">
+      <h1 class="text-6xl text-[#ffd60a] text-center font-bold!">
         My Experience
       </h1>
 
