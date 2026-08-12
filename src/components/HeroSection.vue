@@ -79,11 +79,10 @@
     </div>
 
     <div
-      class="hidden shrink-0 overflow-hidden rounded-full
+      class="order-first shrink-0 overflow-hidden rounded-full
              ring-4 ring-[#ffd60a] shadow-2xl
-             md:block md:h-72 md:w-72
-             lg:h-96 lg:w-96
-             xl:h-[30rem] xl:w-[30rem]"
+             md:order-0 md:block h-36 w-36 sm:h-48 sm:w-48 md:h-72 md:w-72
+             lg:h-96 lg:w-96"
     >
       <img
         class="h-full w-full object-cover"
