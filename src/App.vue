@@ -7,7 +7,7 @@
       <ExperienceSection id="experience" />
       <Projects id="research" :section="'research'" />
       <Projects id="designs" :section="'design'" />
-      <!-- <CommentSection id="comments" /> -->
+      <CommentSection id="comments" />
     </main>
   </div>
 </template>
